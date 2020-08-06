@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
+enum ButtonSize{
+  large,
+  medium,
+  small,
+}
+
 class GeneralButton extends StatelessWidget {
-  final String type;
+  final ButtonSize type;
   final String buttonText;
   final double boderRadius;
   Function callback;
@@ -13,8 +19,8 @@ class GeneralButton extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return ButtonTheme(
-      minWidth: type == 'L' ? 158 : type == 'M' ? 112 : 62 ,
-      height: type == 'L' ? 48 : type == 'M' ? 34.03 : 18 ,
+      minWidth: type.index == 0 ? 158 : type.index == 1 ? 112 : 62 ,
+      height: type.index == 0 ? 48 : type.index == 1 ? 34.03 : 18 ,
       child: RaisedButton(
         elevation: 5,
         materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
@@ -26,9 +32,9 @@ class GeneralButton extends StatelessWidget {
           buttonText,
           style: TextStyle(
               color: Colors.white,
-              fontSize: type == 'L' ? 20 : type == 'M' ? 16 : 8,
+              fontSize: type.index == 0 ? 20 : type.index == 1 ? 16 : 8,
               letterSpacing: 0.15,
-              fontWeight: type == 'L' ? FontWeight.w300 : FontWeight.w500,
+              fontWeight: type.index == 0 ? FontWeight.w300 : FontWeight.w500,
               fontFamily: 'Roboto'),
         ),
         onPressed: callback,

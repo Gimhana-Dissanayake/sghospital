@@ -42,6 +42,8 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    var isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
+
     return Scaffold(
       body: Container(
         width: double.infinity,
@@ -55,17 +57,22 @@ class _HomePageState extends State<HomePage> {
                   DarshBoardScreen(),
                   AppointmentScreen(),
                   FeedbackScreen(),
+                  ContactUsScreen()
                 ],
                 controller: pageController,
                 onPageChanged: onPageChanged,
                 physics: NeverScrollableScrollPhysics()),
             Positioned(
-              bottom: -175,
-              right: -120,
+//              bottom: -175,
+//              right: -120,
+              bottom: isPortrait?-175:-170,
+              right: isPortrait?-120:-150,
               child: ClipOval(
                 child: Container(
+//                  height: 200,
+//                  width: 600,
                   height: 200,
-                  width: 600,
+                  width: isPortrait?600:940,
                   color: Hexcolor('#E4DCFF'),
                 ),
               ),

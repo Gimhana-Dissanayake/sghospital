@@ -50,7 +50,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
         body: Container(
           child: Column(
             children: <Widget>[
-              AppointmentCard(),
+             SessionCard(),
             ],
           ),
         ));

@@ -302,7 +302,7 @@ class AppointmentCard extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.only(top: 8, bottom: 9),
                     child: GeneralButton(
-                      type: 'S',
+                      type: ButtonSize.small,
                       buttonText: 'Inquiries',
                       boderRadius: 15.0,
                       callback: () {

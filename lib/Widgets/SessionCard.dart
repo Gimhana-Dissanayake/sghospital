@@ -521,17 +521,11 @@ class SessionCard extends StatelessWidget {
                     children: <Widget>[
                       Container(
                         margin: EdgeInsets.only(top: 35, left: 4, right: 4),
-//                            child: GeneralButton(
-//                              type: 'S',
-//                              callback: () => {},
-//                              boderRadius: 40,
-//                              buttonText: 'Channel',
-//                            ),
                         child: GeneralButton(
                           buttonText: 'Channel now',
                           boderRadius: 40,
                           callback: () => {},
-                          type: 'S',
+                          type: ButtonSize.small,
                         ),
                       ),
                     ],

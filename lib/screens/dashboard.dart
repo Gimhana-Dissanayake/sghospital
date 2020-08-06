@@ -25,7 +25,7 @@ class DarshBoardScreen extends StatelessWidget {
                     crossAxisSpacing: 5,
                     children: <Widget>[
                       Tile(
-                        type: 'M',
+                        type: TileSize.medium,
                         imageTopMargin: 2,
                         callBack: () {
                           print('Hello');
@@ -35,7 +35,7 @@ class DarshBoardScreen extends StatelessWidget {
                         text: 'View Consultants',
                       ),
                       Tile(
-                        type: 'M',
+                        type: TileSize.medium,
                         imageTopMargin: 2,
                         callBack: () {
                           print('Hello');
@@ -45,7 +45,7 @@ class DarshBoardScreen extends StatelessWidget {
                         text: 'View Consultants',
                       ),
                       Tile(
-                        type: 'M',
+                        type: TileSize.medium,
                         imageTopMargin: 2,
                         callBack: () {
                           print('Hello');
@@ -54,7 +54,7 @@ class DarshBoardScreen extends StatelessWidget {
                         text: 'View Consultants',
                       ),
                       Tile(
-                        type: 'M',
+                        type: TileSize.medium,
                         imageTopMargin: 2,
                         callBack: () {
                           print('Hello');
@@ -64,7 +64,7 @@ class DarshBoardScreen extends StatelessWidget {
                         text: 'View Consultants',
                       ),
                       Tile(
-                        type: 'M',
+                        type: TileSize.medium,
                         imageTopMargin: 2,
                         callBack: () {
                           print('Hello');
@@ -73,7 +73,7 @@ class DarshBoardScreen extends StatelessWidget {
                         text: 'View Consultants',
                       ),
                       Tile(
-                        type: 'M',
+                        type: TileSize.medium,
                         imageTopMargin: 2,
                         callBack: () {
                           print('Hello');

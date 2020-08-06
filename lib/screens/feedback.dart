@@ -83,7 +83,7 @@ class FeedbackScreen extends StatelessWidget {
                     margin:
                         EdgeInsets.only(top: 32.99 * heightFactor, bottom: 10),
                     child: GeneralButton(
-                      type: 'M',
+                      type:ButtonSize.medium,
                       buttonText: 'Submit',
                       boderRadius: 20.0,
                       callback: () {
