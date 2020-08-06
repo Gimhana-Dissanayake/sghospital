@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-enum TileSize{
+enum TileSize {
   medium,
   small,
 }
@@ -39,9 +39,10 @@ class Tile extends StatelessWidget {
       heightFactor = width / 414;
     }
 
-    var ContainerWidth = type.index == 0 ? 160 * widthFactor : 120 * widthFactor;
+    var ContainerWidth =
+        type.index == 0 ? 160 * widthFactor : 120 * widthFactor;
     var ContainerHeight =
-    type.index == 0 ? 151.48 * heightFactor : 117.05 * heightFactor;
+        type.index == 0 ? 151.48 * heightFactor : 117.05 * heightFactor;
 
     return Container(
       width: ContainerWidth,
@@ -58,7 +59,7 @@ class Tile extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Expanded(
-                  flex: type.index == 0 ? 4 : 6,
+                  flex: type.index == 0 ? 4 : 20,
                   child: Container(
                     margin: EdgeInsets.only(
                       top: imageTopMargin,
@@ -69,11 +70,16 @@ class Tile extends StatelessWidget {
                   ),
                 ),
                 Expanded(
-                  flex: type.index == 0 ? 1 : 4,
+                  flex: type.index == 0 ? 1 : 15,
                   child: Container(
-                    margin: EdgeInsets.only(bottom: 5,top:5),
+                    margin: EdgeInsets.only(bottom: 5, top: 5),
                     child: Container(
-                      child: Text(text),
+                      child: Center(
+                          child: Text(
+                        text,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontSize: 13, letterSpacing: 0.15),
+                      )),
                     ),
                   ),
                 ),

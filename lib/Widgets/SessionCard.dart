@@ -109,7 +109,7 @@ class SessionCard extends StatelessWidget {
                                               fontSize: 8,
                                             ),
                                           ),
-                                          margin: EdgeInsets.only(left: 15),
+                                          margin: EdgeInsets.only(left: 16),
                                         )
                                       ],
                                     ),
@@ -433,80 +433,80 @@ class SessionCard extends StatelessWidget {
                                     ],
                                   ),
                                 ),
-                                Container(
-                                  margin: EdgeInsets.only(bottom: 0.0),
-                                  decoration: BoxDecoration(
-                                    border: Border(
-                                      bottom: BorderSide(
-                                        color:
-                                            Color.fromARGB(25, 196, 196, 196),
-                                        width: 1,
-                                      ),
-                                    ),
-                                  ),
-                                  child: Row(
-                                    children: <Widget>[
-                                      Expanded(
-                                        flex: 3,
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: <Widget>[
-                                            Container(
-                                              child: Text(
-                                                '28/07/2020',
-                                                style: TextStyle(
-                                                  color: Hexcolor('#1F3A6F'),
-                                                  fontSize: 9,
-                                                  fontWeight: FontWeight.w500,
-                                                ),
-                                              ),
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                      Expanded(
-                                        flex: 4,
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: <Widget>[
-                                            Container(
-                                              child: Text(
-                                                '4:00pm - 5.00pm',
-                                                style: TextStyle(
-                                                  color: Hexcolor('#1F3A6F'),
-                                                  fontSize: 9,
-                                                  fontWeight: FontWeight.w500,
-                                                ),
-                                              ),
-                                              margin: EdgeInsets.only(left: 5),
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                      Expanded(
-                                        flex: 3,
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.end,
-                                          children: <Widget>[
-                                            Container(
-                                              child: Text(
-                                                '10 more slots',
-                                                style: TextStyle(
-                                                  color: Hexcolor('#1F3A6F'),
-                                                  fontSize: 9,
-                                                  fontWeight: FontWeight.w500,
-                                                ),
-                                              ),
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
+//                                Container(
+//                                  margin: EdgeInsets.only(bottom: 0.0),
+//                                  decoration: BoxDecoration(
+//                                    border: Border(
+//                                      bottom: BorderSide(
+//                                        color:
+//                                            Color.fromARGB(25, 196, 196, 196),
+//                                        width: 1,
+//                                      ),
+//                                    ),
+//                                  ),
+//                                  child: Row(
+//                                    children: <Widget>[
+//                                      Expanded(
+//                                        flex: 3,
+//                                        child: Column(
+//                                          crossAxisAlignment:
+//                                              CrossAxisAlignment.start,
+//                                          children: <Widget>[
+//                                            Container(
+//                                              child: Text(
+//                                                '28/07/2020',
+//                                                style: TextStyle(
+//                                                  color: Hexcolor('#1F3A6F'),
+//                                                  fontSize: 9,
+//                                                  fontWeight: FontWeight.w500,
+//                                                ),
+//                                              ),
+//                                            )
+//                                          ],
+//                                        ),
+//                                      ),
+//                                      Expanded(
+//                                        flex: 4,
+//                                        child: Column(
+//                                          crossAxisAlignment:
+//                                              CrossAxisAlignment.start,
+//                                          children: <Widget>[
+//                                            Container(
+//                                              child: Text(
+//                                                '4:00pm - 5.00pm',
+//                                                style: TextStyle(
+//                                                  color: Hexcolor('#1F3A6F'),
+//                                                  fontSize: 9,
+//                                                  fontWeight: FontWeight.w500,
+//                                                ),
+//                                              ),
+//                                              margin: EdgeInsets.only(left: 5),
+//                                            )
+//                                          ],
+//                                        ),
+//                                      ),
+//                                      Expanded(
+//                                        flex: 3,
+//                                        child: Column(
+//                                          crossAxisAlignment:
+//                                              CrossAxisAlignment.end,
+//                                          children: <Widget>[
+//                                            Container(
+//                                              child: Text(
+//                                                '10 more slots',
+//                                                style: TextStyle(
+//                                                  color: Hexcolor('#1F3A6F'),
+//                                                  fontSize: 9,
+//                                                  fontWeight: FontWeight.w500,
+//                                                ),
+//                                              ),
+//                                            )
+//                                          ],
+//                                        ),
+//                                      ),
+//                                    ],
+//                                  ),
+//                                ),
                               ],
                             ),
                           ],
